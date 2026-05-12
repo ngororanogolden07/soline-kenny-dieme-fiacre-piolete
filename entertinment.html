@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entertainment Registration Form</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+h2{
+    text-align: center;
+    color: #243b55;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background: #141e30;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Entertainment Form</h2>
+
+    <form>
+
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <select required>
+            <option value="">Select Favorite Entertainment</option>
+            <option>Music</option>
+            <option>Movies</option>
+            <option>Gaming</option>
+            <option>Sports</option>
+        </select>
+
+        <input type="text" placeholder="Favorite Artist or Game">
+
+        <textarea rows="4" placeholder="Tell us what you enjoy..."></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
