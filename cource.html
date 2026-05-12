@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Registration Form</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+h2{
+    text-align: center;
+    color: #0077b6;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label{
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #023e8a;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Course Registration Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Age</label>
+        <input type="number" placeholder="Enter your age" required>
+
+        <label>Select Course</label>
+        <select required>
+            <option value="">Choose a course</option>
+            <option>Web Development</option>
+            <option>Graphic Design</option>
+            <option>Software Development</option>
+            <option>Entertainment Media</option>
+            <option>Game Development</option>
+        </select>
+
+        <label>Favorite Entertainment</label>
+        <select>
+            <option>Music</option>
+            <option>Movies</option>
+            <option>Gaming</option>
+            <option>Sports</option>
+        </select>
+
+        <label>Why do you want this course?</label>
+        <textarea rows="4" placeholder="Write your reason here..."></textarea>
+
+        <button type="submit">Register Now</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
